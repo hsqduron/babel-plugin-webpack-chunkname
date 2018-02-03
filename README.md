@@ -6,7 +6,7 @@
 ## Install
 
 ```bash
-yarn add babel-plugin-webpack-chunkname
+yarn add hsqduron/babel-plugin-webpack-chunkname or npm install hsqduron/babel-plugin-webpack-chunkname
 ```
 
 ## Usage
