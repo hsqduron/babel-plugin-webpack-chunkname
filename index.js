@@ -1,5 +1,8 @@
 const trimChunkName = baseDir => {
-  return baseDir.replace(/^[./]+|(\.js$)/g, '')
+	let chunkName = baseDir.replace(/^[./]+|(\.js$)/g, '')
+	chunkName = chunkName.replace(/^(@\/)/,'')
+	chunkName = chunkName.replace(/\//g,'_')
+	return chunkName
 }
 
 function hasMagicComment(node) {
